@@ -5,10 +5,75 @@
     display: grid;
     text-align: center;
     
-    grid-template-rows: repeat(4,300px);
-    grid-template-columns: repeat(5, 2fr);
+    /* grid-template-rows: repeat(4,300px);
+    grid-template-columns: repeat(5, 2fr); */
     /* grid-template-rows: 200px 200fr 200px; */
     /* grid-row-gap: 20px; */
     grid-column-gap: 50px ;
-    grid-row-gap: 0ch;
+    grid-row-gap: 50px;
+    grid-template-areas:
+    'item1 item2 item3 item4 item5'
+    ;
+    
+}
+
+
+
+.item1{
+    background-color: aqua;
+    align-self: center;
+    
+
+
+}
+
+
+.item2{
+    background-color: aqua;
+    align-self: center;
+   
+
+
+}
+.item3{
+    background-color: aqua;
+    align-self: center;
+    
+
+
+}
+.item4{
+    background-color: aqua;
+    align-self: center;
+    
+
+
+}
+.item5{
+    background-color: aqua;
+    align-self: center;
+
+   
+
+
+}
+
+
+
+.tooltiptext5{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .item1, .item2, .item3, .item4, .item5 {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .grid-2{
+        grid-template-areas:
+        'item1'
+        'item2'
+        'item3'
+        'item4' 
+        'item5'
+    }
 }
