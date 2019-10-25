@@ -1,0 +1,14 @@
+.grid-2{
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    
+    grid-template-rows: repeat(4,300px);
+    grid-template-columns: repeat(5, 2fr);
+    /* grid-template-rows: 200px 200fr 200px; */
+    /* grid-row-gap: 20px; */
+    grid-column-gap: 50px ;
+    grid-row-gap: 0ch;
+}
