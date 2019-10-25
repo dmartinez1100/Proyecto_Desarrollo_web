@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 30% 20%;
+}
+.txt{
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+.head{
+    display: grid;
+    grid-template-columns: 1fr 30% 30% 10%;
+    grid-template-rows: 100%;
+    background-color: blue;
+    padding: 0px 20px 0px 35px;
+}
+.txt{
+    align-self: center;
+}
