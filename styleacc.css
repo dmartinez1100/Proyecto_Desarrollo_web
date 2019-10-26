@@ -18,40 +18,66 @@
 }
 
 
+.acc{
+    background-color: aquamarine;
+    width: 100%;
+    color:black;
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px black; 
+    
+    
+}
 
 .item1{
-    background-color: aqua;
-    align-self: center;
     
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/acc1.jpg);
+    background-size: 100%;
+    position: relative;
 
 
 }
 
 
 .item2{
-    background-color: aqua;
-    align-self: center;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/acc2.jpg);
+    background-size: cover;
+    position: relative;
    
 
 
 }
 .item3{
-    background-color: aqua;
-    align-self: center;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/acc3.jpg);
+    background-size: cover;
+    position: relative;
     
 
 
 }
 .item4{
-    background-color: aqua;
-    align-self: center;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/acc4.jpg);
+    background-size: cover;
+    position: relative;
     
 
 
 }
 .item5{
-    background-color: aqua;
-    align-self: center;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/acc5.jpg);
+    background-size: cover;
+    position: relative;
 
    
 
