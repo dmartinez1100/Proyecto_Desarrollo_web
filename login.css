@@ -1,11 +1,6 @@
 html{
     background-color: rgb(245, 237, 215);
 }
-.container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 30% 30% 20%;
-}
 body{
     width: 100%;
     margin: 0;
