@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    background-color: #496A80;
+}
+
 .grid-2{
     font-size: 20px;
     color: black;
@@ -26,6 +31,9 @@
 
 
 .barra{
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
     display: grid;
     grid-auto-columns: 80px 2fr 2fr 2fr 80px;
     grid-auto-rows: 80px;
@@ -35,21 +43,20 @@
 }
 
 
-.desp{
-    background: url(assets/images/menu.svg) no-repeat center ;
-    background-size: cover;
-    position: relative;
-    grid-column: 1/2;
-    font-size: 80px;
-    box-shadow: 0px 0px 10px 0px black; 
-    
-    
-}
+
+
 .dropdown{
+    grid-column: 1/2;
+    background: url(assets/images/menu.svg) no-repeat center ;
+    background-size: 60px;
     position: relative;
+    background-color: #0097FC;
+    
     display: inline-block;
+    box-shadow: 0px 0px 10px 0px black; 
 }
 .dropdown-content {
+     
     display: none;
     position: absolute;
     right: 0;
@@ -58,76 +65,81 @@
     
 }
 
-.dropdown-content a{
-    color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown-content .inicio{
+    background-color: black;
+    width: 50vw;
+    height: 100px;
+    color: white;
+    padding: 12px 16px ;
+    display: block;
+    text-align: center;
+}
+[class^="link"]{
+    background-color: black;
+    width: 50vw;
+    height: 100px;
+    color: white;
+    padding: 12px 16px ;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #b9b1b1;}
+.dropdown-content .inicio:hover {background-color: #b9b1b1;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .desp {background-color: #3e8e41;}
+.dropdown:hover {background-color: #f1f1f1;;}
 
+h1{
+    background-color: aqua;
+    
+    
+}
 .search1{
     grid-column: 2/5;
     box-shadow: 0px 0px 10px 0px black; 
+    color: darkgray;
+    background-color: #81BCE3;
 }
-.search{
+.search2{
     background: url(assets/images/loupe.svg) no-repeat center ;
     grid-column: 5/6;
-    background-size: 60px;
+    background-size: 40px;
     position: relative;
     font-size: 80px;
-    
-    box-shadow: 0px 0px 10px 0px black; 
+    background-color: #0097FC;
+    border-bottom: #0097FC;
+    box-shadow: 0px 0px 10px 0px black;  
 
 }
-.acc{
+.Acc{
     
     
-    color:black;
-    font-family: fantasy;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 80px;
     text-align: center;
-    box-shadow: 0px 0px 10px 0px black; 
     
     
-}
-.acc1{
-    display: grid;
-    grid-auto-columns: 300px ;
-    grid-auto-rows: 300px 80px;
-}
-.acc2{
-    display: grid;
-    grid-auto-columns: 300px ;
-    grid-auto-rows: 300px 80px;
-}
-.acc3{
-    display: grid;
-    grid-auto-columns: 300px ;
-    grid-auto-rows: 300px 80px;
-}
-.acc4{
-    display: grid;
-    grid-auto-columns: 300px ;
-    grid-auto-rows: 300px 80px;
+    
 }
 
-.acc5{
+[class^="acc"]{
     display: grid;
     grid-auto-columns: 300px ;
     grid-auto-rows: 300px 80px;
+    justify-items: center;
+    align-items: center;
+
 }
 .item1{
-    grid-row: 1/2;
-    
+    grid-row: 1/2; 
+    border-radius: 25px;
     background-image: url(assets/images/acc1.jpg);
     width: 300px;
     height: 300px;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
     
 
 
@@ -136,197 +148,115 @@
 
 .item2{
     grid-row: 1/2;
+    border-radius: 25px;
     background-image: url(assets/images/acc2.jpg);
     height: 300px;
     width: 300px;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
 
 
 }
 .item3{
     grid-row: 1/2;
+    border-radius: 25px;
     height: 300px;
     width: 300px;
     background-image: url(assets/images/acc3.jpg) ;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
     
 
 
 }
 .item4{
     grid-row: 1/2;
+    border-radius: 25px;
     height: 300px;
     width: 300px;
     background-image: url(assets/images/acc4.jpg) ;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
     
 
 
 }
 .item5{
     grid-row: 1/2;
+    border-radius: 25px;
     height: 300px;
     width: 300px;
     background-image: url(assets/images/acc5.jpg) ;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
 
    
 
 
 }
-
-.item6{
+[class^="item0"]{
     grid-row: 2/3;
     display: grid;
     grid-auto-rows: 80px;
     grid-auto-columns: 80% 20%;
     margin: 0;
+
 }
-.descrip1{
+[class^="descrip"]{
     grid-column: 1/2;
     color:black;
     font-family: fantasy;
     font-size: 10px;
     text-align: center;
-    
+    color: rgb(136, 192, 248);
+
+
 }
-.btn1{
+[class^="btn"]{
     grid-column: 2/3;
     background: url(assets/images/shopping-cart.svg) no-repeat center;
-    background-size: 30px;
+    background-size: 20px;
     
     text-align: center;
     background-color: white;
 
     font-size: 24px;
-    border-radius: 80%;
+    border-radius: 100%;
     padding: 15px 32px;
-    position: relative;
+    align-self: center;
+    /* position: relative; */
+
 }
 
-.item7{
-    grid-row: 2/3;
-    display: grid;
-    grid-auto-rows: 80px;
-    grid-auto-columns: 80% 20%;
-    margin: 0;
+[class^="btn"]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: cell;
+
 }
-.descrip2{
-    grid-column: 1/2;
-    color:black;
-    font-family: fantasy;
-    font-size: 10px;
+btn1:hover .btnhover {
+    display: block;
+    }
+  
+.btnhover {
+    display: none;
+}
+.btnhover {
+    visibility: hidden;
+    width: 120px;
     text-align: center;
-    
-}
-.btn2{
-    grid-column: 2/3;
-    background: url(assets/images/shopping-cart.svg) no-repeat center;
-    background-size: 30px;
-    
-    text-align: center;
-    background-color: white;
-
-    font-size: 24px;
-    border-radius: 80%;
-    padding: 15px 32px;
-    position: relative;
-}
-
-
-.item8{
-    grid-row: 2/3;
-    display: grid;
-    grid-auto-rows: 80px;
-    grid-auto-columns: 80% 20%;
-    margin: 0;
-}
-.descrip3{
-    grid-column: 1/2;
-    color:black;
-    font-family: fantasy;
-    font-size: 10px;
-    text-align: center;
-    
-}
-.btn3{
-    grid-column: 2/3;
-    background: url(assets/images/shopping-cart.svg) no-repeat center;
-    background-size: 30px;
-    
-    text-align: center;
-    background-color: white;
-
-    font-size: 24px;
-    border-radius: 80%;
-    padding: 15px 32px;
-    position: relative;
-}
-
-
-.item9{
-    grid-row: 2/3;
-    display: grid;
-    grid-auto-rows: 80px;
-    grid-auto-columns: 80% 20%;
-    margin: 0;
-}
-.descrip4{
-    grid-column: 1/2;
-    color:black;
-    font-family: fantasy;
-    font-size: 10px;
-    text-align: center;
-    
-}
-.btn4{
-    grid-column: 2/3;
-    background: url(assets/images/shopping-cart.svg) no-repeat center;
-    background-size: 30px;
-    
-    text-align: center;
-    background-color: white;
-
-    font-size: 24px;
-    border-radius: 80%;
-    padding: 15px 32px;
-    position: relative;
-}
-
-
-.item10{
-    grid-row: 2/3;
-    display: grid;
-    grid-auto-rows: 80px;
-    grid-auto-columns: 80% 20%;
-    margin: 0;
-}
-.descrip5{
-    grid-column: 1/2;
-    color:black;
-    font-family: fantasy;
-    font-size: 10px;
-    text-align: center;
-    
-}
-.btn5{
-    grid-column: 2/3;
-    background: url(assets/images/shopping-cart.svg) no-repeat center;
-    background-size: 30px;
-    
-    text-align: center;
-    background-color: white;
-
-    font-size: 24px;
-    border-radius: 80%;
-    padding: 15px 32px;
-    position: relative;
-}
-
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: red;
+    font-family: 'Arvo', serif;
+    background-color:black;
+    }
 
 
 .tooltiptext5{
@@ -355,6 +285,17 @@
         border-radius: 80%;
         font-size: 60px;
     
+    }
+    .dropdown-content .inicio{
+        width: 80vw;
+        height: 40px;
+        font-size: 35px;
+    }
+    [class^="link"]{
+        width: 80vw;
+        height: 40px;
+        font-size: 30px;
+        
     }
 }
 @media screen and (max-width: 1056px) {
