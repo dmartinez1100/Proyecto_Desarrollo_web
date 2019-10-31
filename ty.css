@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    background-color: #496A80;
+}
+.barra{
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-auto-columns: 80px 300px 2fr 2fr 80px;
+    grid-auto-rows: 60px;
+    
+    margin: 0;
+    /* background-color: aquamarine; */
+}
+
+
+
+
+.dropdown{
+    grid-column: 1/2;
+    background: url(assets/images/menu.svg) no-repeat center ;
+    background-size: 40px;
+    /* position: relative; */
+    background-color: #0097FC;
+    
+    display: block;
+    box-shadow: 0px 0px 10px 0px black; 
+    
+}
+.dropdown-content {
+     
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 57px;
+    
+}
+
+.dropdown-content .inicio{
+    
+    background-color: slategrey;
+    width: 50vw;
+    height: 120px;
+    color: white;
+    padding: 12px 16px ;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+    z-index: 3;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.dropdown-content .categ{
+    background-color: white;
+    width: 50vw;
+    height: 100px;
+    color: lightgrey;
+    padding: 12px 16px ;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    
+    z-index: 3;
+}
+[class^="link"]{
+    
+    background-color: black;
+    width: 50vw;
+    height: 100px;
+    color: white;
+    padding: 12px 16px ;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: 'Pragati Narrow', sans-serif;
+    
+    
+}
+
+
+.dropdown-content a:hover {background-color: #b9b1b1;}
+.dropdown-content .inicio:hover {background-color: #b9b1b1;}
+
+.dropdown-content .categ:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover {background-color: #f1f1f1;}
+
+
+h1{
+    background-color: aqua;
+    
+    
+}
+.page{
+    grid-column: 2/3;
+    box-shadow: 0px 0px 10px 0px black; 
+    color: white;
+    background-color: rgb(24, 37, 43);
+    font-family: 'Carter One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+.search1{
+    grid-column: 3/5;
+    box-shadow: 0px 0px 10px 0px black; 
+    color: darkgray;
+    background-color: #81BCE3;
+}
+.search2{
+    background: url(assets/images/loupe.svg) no-repeat center ;
+    grid-column: 5/6;
+    background-size: 40px;
+    position: relative;
+    font-size: 80px;
+    background-color: #0097FC;
+    border-bottom: #0097FC;
+    box-shadow: 0px 0px 10px 0px black;  
+
+}
+.Acc {
+    
+    
+    color: black;
+    font-family: 'Bangers', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    align-self: center;
+    
+    background-color: rgb(190, 229, 255);
+    box-shadow: 0px 0px 10px 0px black;  
+    
+    
+    
+}
+#video-background{
+    border: 0; width:100%; height: 300px; overflow: auto
+}
+
+.grid1{
+    display: grid;
+    grid-auto-rows: 400px 400px 400px 400px 400px;
+    grid-auto-columns: 100%;
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+    
+}
+[class^="ex"]{
+    display: grid;
+    grid-auto-columns: 30% 40% 30%;
+    grid-auto-rows: 100%;
+
+}
+[class^="video"]{
+    grid-column: 3/4;
+}
+[class^="desc"]{
+    border-radius: 25px;
+    grid-column: 2/3;
+    background-color: azure;
+    margin: 20px;
+    text-align: center;
+    padding: 16px 24px;
+    font-family: 'Pragati Narrow', sans-serif;
+    box-shadow: 0px 0px 10px 0px black; 
+    
+
+}
+h2{
+    font-family: 'Carter One', sans-serif;
+    background-color: #496A80;
+    color: white;
+}
+[class^="img"]{
+    grid-column: 1/2;
+    
+
+}
+
+.img1{
+    background: url(assets/images/abs1.jpg) center;
+    border-radius: 25px;
+    
+    background-size: cover;
+    margin: 10px;
+}
+.img2{
+    background: url(assets/images/abs2.jpg);
+    border-radius: 25px;
+    
+    background-size: cover;
+    margin: 10px;
+}
+.img3{
+    background: url(assets/images/abs3.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    
+    margin: 10px;
+}
+.img4{
+    background: url(assets/images/abs4.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+.img5{
+    background: url(assets/images/abs5.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.name{
+    display: grid;
+    grid-auto-columns: 85% 15%;
+    grid-auto-rows: 100%;
+}
+
+.name1{
+    text-align: center;
+    grid-column:1/2;
+    width: 100%;
+    font-family: 'Carter One', sans-serif;
+    background-color: #496A80;
+    color: white;
+    padding: 2px ;
+
+}
+
+[class^="1link"]{
+    width: 100%;
+    height: 30px;
+    align-self: center;
+    text-align: center;
+    color: blue;
+    display: none;
+}
+[class^="1link"]:hover{
+    
+    color: grey;
+    
+}
+[class^="fav"]{
+    grid-column: 2/3;
+    background: url(assets/images/favorite-heart-button.svg) no-repeat center;
+    background-size: 20px;
+    
+    text-align: center;
+    background-color: white;
+
+    font-size: 24px;
+    /* border-radius: 100%; */
+    padding: 15px 32px;
+    align-self: center;
+    box-shadow: 0px 0px 10px 0px black; 
+
+}
+[class^="fav"]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    /* .descrip2{
+        display: none;
+    } */
+    [class^="1link"]{
+        
+        display: block;
+    }
+    [class^="video"]{
+        display: none;
+    }
+    [class^="ex"]{
+        display: grid;
+        grid-auto-columns: 100%;
+        grid-auto-rows: 300px 300px;
+    
+    }
+    [class^="img"]{
+    width: 450px;
+  
+    
+    align-self: start;
+    height: 300px;
+    background-position: center center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    [class^="desc"]{
+        
+        grid-column: 1/2;
+        grid-row: 2/3;
+            /* The width is 100%, when the viewport is 800px or smaller */
+        }
+
+
+    
+    .barra{
+        grid-auto-columns: 60px 160px 2fr 2fr 60px;
+        grid-auto-rows: 50px;
+    }
+    .dropdown-content .inicio{
+        width: 60vw;
+        height: 40px;
+        font-size: 35px;
+    }
+    .dropdown-content .categ{
+        width: 60vw;
+        height: 40px;
+        font-size: 30px;
+    }
+    [class^="link"]{
+        width: 60vw;
+        height: 40px;
+        font-size: 30px;
+        
+    }
+    .page{
+        font-size: 22px;
+        text-align: center;
+    }
+    .Acc{
+        font-size: 60px;
+        text-align: center;
+    }
+}

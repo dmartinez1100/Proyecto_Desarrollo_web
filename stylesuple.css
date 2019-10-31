@@ -543,6 +543,10 @@ btn1:hover .btnhover {
         font-size: 60px;
     
     }
+    .barra{
+        grid-auto-columns: 60px 160px 2fr 2fr 60px;
+        grid-auto-rows: 50px;
+    }
     .dropdown-content .inicio{
         width: 60vw;
         height: 40px;
@@ -566,6 +570,9 @@ btn1:hover .btnhover {
     .ropa{
         font-size: 60px;
         text-align: center;
+    }
+    .page{
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 1056px) {
