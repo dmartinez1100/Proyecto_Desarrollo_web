@@ -36,7 +36,7 @@ body{
     position: fixed;
     display: grid;
     grid-auto-columns: 80px 2fr 2fr 2fr 80px;
-    grid-auto-rows: 80px;
+    grid-auto-rows: 60px;
     
     margin: 0;
     /* background-color: aquamarine; */
@@ -48,33 +48,53 @@ body{
 .dropdown{
     grid-column: 1/2;
     background: url(assets/images/menu.svg) no-repeat center ;
-    background-size: 60px;
-    position: relative;
+    background-size: 40px;
+    /* position: relative; */
     background-color: #0097FC;
     
-    display: inline-block;
+    display: block;
     box-shadow: 0px 0px 10px 0px black; 
+    
 }
 .dropdown-content {
      
     display: none;
     position: absolute;
     right: 0;
-    z-index: 1;
-    font-size: 80px;
+    font-size: 57px;
     
 }
 
 .dropdown-content .inicio{
-    background-color: black;
+    
+    background-color: slategrey;
     width: 50vw;
-    height: 100px;
+    height: 120px;
     color: white;
     padding: 12px 16px ;
     display: block;
     text-align: center;
+    text-decoration: none;
+    align-self: center;
+    z-index: 3;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.dropdown-content .categ{
+    background-color: white;
+    width: 50vw;
+    height: 100px;
+    color: lightgrey;
+    padding: 12px 16px ;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    
+    z-index: 3;
 }
 [class^="link"]{
+    
     background-color: black;
     width: 50vw;
     height: 100px;
@@ -83,12 +103,19 @@ body{
     text-decoration: none;
     display: block;
     text-align: center;
+    font-family: 'Pragati Narrow', sans-serif;
+    
+    
 }
+
 
 .dropdown-content a:hover {background-color: #b9b1b1;}
 .dropdown-content .inicio:hover {background-color: #b9b1b1;}
+
+.dropdown-content .categ:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover {background-color: #f1f1f1;;}
+.dropdown:hover {background-color: #f1f1f1;}
+
 
 h1{
     background-color: aqua;
@@ -112,13 +139,32 @@ h1{
     box-shadow: 0px 0px 10px 0px black;  
 
 }
-.Acc{
+.Acc {
     
     
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-family: 'Bangers', sans-serif;
     font-size: 80px;
     text-align: center;
+    align-self: center;
+    
+    background-color: rgb(190, 229, 255);
+    box-shadow: 0px 0px 10px 0px black;  
+    
+    
+    
+}
+.ropa {
+    
+    
+    color: black;
+    font-family: 'Bangers', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    align-self: center;
+    
+    background-color: rgb(190, 229, 255);
+    box-shadow: 0px 0px 10px 0px black;  
     
     
     
@@ -128,36 +174,69 @@ h1{
     display: grid;
     grid-auto-columns: 300px ;
     grid-auto-rows: 300px 80px;
-    justify-items: center;
-    align-items: center;
+    /* justify-items: center;
+    align-items: center; */
 
 }
-.item1{
+.iitem1{
     grid-row: 1/2; 
     border-radius: 25px;
     background-image: url(assets/images/acc1.jpg);
     width: 300px;
     height: 300px;
     background-size: cover;
+    display: block;
     /* position: relative; */
     
 
 
 }
+.desc01-content {
+     
+    display: none;
+    
+    
+    font-size: 80px;
+    
+}
+
+ [class^="descrip0"]{
+    
+    background:rgba(255,255,255,0.5);
+    width: 268px;
+    height: 276px;
+    color: white;
+    font-size: 20px;
+    padding: 12px 16px ;
+    display: block;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    
+    
+    
+}
+[class^="ii"]:hover .desc01-content{
+    display: block;
+    right: 50px;
+}
 
 
-.item2{
+
+
+.iitem2{
     grid-row: 1/2;
     border-radius: 25px;
     background-image: url(assets/images/acc2.jpg);
     height: 300px;
     width: 300px;
     background-size: cover;
-    /* position: relative; */
+    
+   
 
 
 }
-.item3{
+.iitem3{
     grid-row: 1/2;
     border-radius: 25px;
     height: 300px;
@@ -169,7 +248,7 @@ h1{
 
 
 }
-.item4{
+.iitem4{
     grid-row: 1/2;
     border-radius: 25px;
     height: 300px;
@@ -181,7 +260,7 @@ h1{
 
 
 }
-.item5{
+.iitem5{
     grid-row: 1/2;
     border-radius: 25px;
     height: 300px;
@@ -190,30 +269,121 @@ h1{
     background-size: cover;
     /* position: relative; */
 
+
+}
+
+.iitem6{
+    grid-row: 1/2; 
+    border-radius: 25px;
+    background-image: url(assets/images/ropa1.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    display: block;
+    /* position: relative; */
+    
+
+
+}
+.desc01-content {
+     
+    display: none;
+    
+    
+    font-size: 80px;
+    
+}
+
+
+
+
+
+
+.iitem7{
+    grid-row: 1/2;
+    border-radius: 25px;
+    background-image: url(assets/images/ropa2.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    
    
 
 
 }
+.iitem8{
+    grid-row: 1/2;
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/ropa3.jpg) ;
+    background-size: cover;
+    /* position: relative; */
+    
+
+
+}
+.iitem9{
+    grid-row: 1/2;
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/ropa4.jpg) ;
+    background-size: cover;
+    /* position: relative; */
+    
+
+
+}
+.iitem10{
+    grid-row: 1/2;
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url(assets/images/ropa5.jpg) ;
+    background-size: cover;
+    /* position: relative; */
+
+
+}
+
 [class^="item0"]{
     grid-row: 2/3;
     display: grid;
-    grid-auto-rows: 80px;
-    grid-auto-columns: 80% 20%;
+    grid-auto-rows: 80px 80px;
+    grid-auto-columns: 55% 20% 5% 20%;
     margin: 0;
 
 }
-[class^="descrip"]{
+[class^="1descrip"]{
     grid-column: 1/2;
+    grid-row: 1/2;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    color: azure;
+    
+
+
+}
+
+[class^="precio"]{
+    grid-column: 1/2;
+    grid-row: 1/2;
     color:black;
     font-family: fantasy;
     font-size: 10px;
     text-align: center;
-    color: rgb(136, 192, 248);
+    color: black;
+    display:none;
 
 
 }
 [class^="btn"]{
     grid-column: 2/3;
+    grid-row: 1/2;
     background: url(assets/images/shopping-cart.svg) no-repeat center;
     background-size: 20px;
     
@@ -221,16 +391,36 @@ h1{
     background-color: white;
 
     font-size: 24px;
-    border-radius: 100%;
+    /* border-radius: 100%; */
     padding: 15px 32px;
     align-self: center;
-    /* position: relative; */
+    box-shadow: 0px 0px 10px 0px black; 
+
+}
+[class^="fav"]{
+    grid-column: 4/5;
+    background: url(assets/images/favorite-heart-button.svg) no-repeat center;
+    background-size: 20px;
+    
+    text-align: center;
+    background-color: white;
+
+    font-size: 24px;
+    /* border-radius: 100%; */
+    padding: 15px 32px;
+    align-self: center;
+    box-shadow: 0px 0px 10px 0px black; 
 
 }
 
 [class^="btn"]:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: cell;
+
+}
+[class^="fav"]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: crosshair;
 
 }
 btn1:hover .btnhover {
@@ -264,7 +454,7 @@ btn1:hover .btnhover {
 }
 
 @media screen and (max-width: 900px) {
-    .item1, .item2, .item3, .item4, .item5 {
+    .iitem1, .iitem2, .iitem3, .iitem4, .iitem5 {
         
     width: 100%;
   
@@ -272,6 +462,12 @@ btn1:hover .btnhover {
     align-self: start;
     background-position: center center;
         /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    /* .descrip2{
+        display: none;
+    } */
+    .precio1{
+        display: block;
     }
     .grid-2{
         grid-template-areas:
@@ -287,15 +483,28 @@ btn1:hover .btnhover {
     
     }
     .dropdown-content .inicio{
-        width: 80vw;
+        width: 60vw;
         height: 40px;
         font-size: 35px;
     }
+    .dropdown-content .categ{
+        width: 60vw;
+        height: 40px;
+        font-size: 30px;
+    }
     [class^="link"]{
-        width: 80vw;
+        width: 60vw;
         height: 40px;
         font-size: 30px;
         
+    }
+    .Acc{
+        font-size: 60px;
+        text-align: center;
+    }
+    .ropa{
+        font-size: 60px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 1056px) {
