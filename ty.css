@@ -157,6 +157,7 @@ h1{
 }
 [class^="video"]{
     grid-column: 3/4;
+    box-shadow: 0px 0px 10px 0px black; 
 }
 [class^="desc"]{
     border-radius: 25px;
@@ -210,6 +211,73 @@ h2{
 }
 .img5{
     background: url(assets/images/abs5.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+.img6{
+    background: url(assets/images/chest1.jpg) center;
+    border-radius: 25px;
+    
+    background-size: cover;
+    margin: 10px;
+}
+.img7{
+    background: url(assets/images/chest2.jpg);
+    border-radius: 25px;
+    
+    background-size: cover;
+    margin: 10px;
+}
+.img8{
+    background: url(assets/images/chest3.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    
+    margin: 10px;
+}
+.img9{
+    background: url(assets/images/chest4.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+.img10{
+    background: url(assets/images/chest5.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.img11{
+    background: url(assets/images/back1.jpg) center;
+    border-radius: 25px;
+    
+    background-size: cover;
+    margin: 10px;
+}
+.img12{
+    background: url(assets/images/back2.jpg);
+    border-radius: 25px;
+    
+    background-size: cover;
+    margin: 10px;
+}
+.img13{
+    background: url(assets/images/back3.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    
+    margin: 10px;
+}
+.img14{
+    background: url(assets/images/back4.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+.img15{
+    background: url(assets/images/back5.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
