@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #94FDFC;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+.contenedor h1{
+    margin-top: 5px;
+}
+
+h1 {
+    float:left;
+}
+
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin:6px 0;
+
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;      
+    background-color:white;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}  
+
+
+
+.menu header {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    color: black;
+    text-align: center;
+    height: 50px;
+}
+
+.menu header h3{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+
+.menu .contenedores{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.menu .contenedores .usuario-page{
+    grid-row: 1/2;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.menu .contenedores .gym-afiliados{
+    grid-row: 2;
+    margin-top: 15px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border: 2px rgba(104, 102, 102, 0.1) solid;
+}
+
+.menu .contenedores .informacion{
+    grid-row: 3;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+
+
+
+
+.menu .contenedores .usuario-page img{
+    margin-top:10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.menu .contenedores .usuario-page h2{
+    color: black;
+    margin-top: 5px;
+}
+
+.menu .contenedores .infomormacion h3{
+    color: rgba(104, 102, 102, 0.9);
+    padding: 10px;
+}
+
+.menu .contenedores .informacion a{
+    display: block;
+    background-color: white;
+    color: black;
+    height: 40px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    border: 1px rgba(104, 102, 102, 0.1) solid;
+    left: 0;
+    right: 0;
+}
+
+.menu .contenedores .informacion a:hover{
+    background: rgba(104, 102, 102, 0.9);
+}
+
+
+ /* -------------------------------- */
+.menu .contenedores .gym-afiliados{
+    position: relative; 
+    overflow: hidden;
+}
+
+
+.menu .contenedores .gym-afiliados ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:0;
+    width: 300%;
+    animation: cambio1 20s infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes cambio1{
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.menu .contenedores .gym-afiliados ul li {
+    list-style: none;
+}
+
+.menu .contenedores .gym-afiliados ul li .bodytech{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    position: absolute;
+    height: 100%;
+}
+
+.menu .contenedores .gym-afiliados ul li .stark{
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    position: absolute;
+    height: 100%;
+}
+
+.menu .contenedores .gym-afiliados ul li .smart{
+    height: 100%;
+    width: 100%;
+    grid-column: 3;
+    position: absolute;
+    height: 100%;
+}
+
+ /* -------------------------------- */
+
+main{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    position: absolute;
+    top:50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: 1;
+    width: 100%;
+}
+
+main .main .entrenador{
+    position: relative;
+    grid-column: 1;
+    text-align: center;
+}
+
+main .main .entrenador  a{
+    margin-bottom: 15px;
+    margin-left: 15px; 
+    margin-right: 15px;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+} 
+
+main .main .entrenador h4{
+    margin: 10px;
+}
+
+main .main .entrenador a img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top:0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+main .main .gimnasio{
+    align-self: center;
+    grid-column:2;
+    background-color: red;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin:10px;
+}
+
+main .promociones{
+    position: relative;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    width: 100%;
+}
+
+main .promociones .bono{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top:5px;
+    bottom: 5px;
+    grid-row: 1;
+    border-radius: 50px;
+    width: 90%;
+    height: 30px;
+    border:2px black solid; 
+}
+
+main .promociones .slider{
+    position: absolute;
+    left: 5%;
+    border-radius: 50px;    
+    right: 5%;
+    grid-row:2;
+    background-color: black;
+    width: 90%;
+    bottom: 0;
+    height: 150px;
+    overflow: hidden;
+}
+
+main .promociones .slider ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:0;
+    width: 300%;
+    animation: cambio1 20s infinite;
+    animation-direction: alternate;
+}
+
+main .promociones .slider ul li {
+    list-style: none;
+}
+
+main .promociones .slider ul li .bodytech{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    position: absolute;
+    height: 100%;
+}
+
+main .promociones .slider ul li .stark{
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    position: absolute;
+    height: 100%;
+}
+
+main .promociones .slider ul li .smart{
+    height: 100%;
+    width: 100%;
+    grid-column: 3;
+    position: absolute;
+    height: 100%;
+}
+
+
+
+
+main .opciones{
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    width: 100%;
+
+}
+
+
+main .opciones .accesorios {
+    align-self: center;
+    grid-column: 1;
+    background: black;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+} 
+
+main .opciones .suplementos {
+    align-self: center;
+    grid-column: 2;
+    background: red;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+} 
+
+main .opciones .rutinas {
+    align-self: center;
+    grid-column: 3;
+    background-color: blue;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; 
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* @keyframes cambio{
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+} */
+/* 
+main .opciones ul li {
+    list-style: none;
+}
+
+main .opciones ul li .accesorios{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    position: absolute;
+    height: 100%;
+}
+
+main .opciones ul li .suplementos{
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    position: absolute;
+    height: 100%;
+}
+
+main .opciones ul li .rutinas{
+    height: 100%;
+    width: 100%;
+    grid-column: 3;
+    position: absolute;
+    height: 100%;
+}
+
+main .controles{
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1/3;
+    margin-top: 5px;
+    bottom: 0;
+}
+main .controles li{
+    background-color: rgba(104, 102, 102, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 0 4px;
+    list-style: none;
+} */
+ */
+
+
+.change{
+    background-color: #415066;
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 0 4px;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-content: center;
+    background: #94FDFC;
+
+} 
+
+footer a{
+    text-decoration: none;
+    margin:2px;
+    border: 1px rgba(104, 102, 102, 0.1) solid;
+    align-self: center;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+footer .icon-home{
+    grid-column: 1;
+}
+footer .footer .icon-heart{
+    grid-column: 2;
+}
+footer .icon-phone{
+    grid-column: 3;
+}
+footer .icon-search{
+    grid-column: 4;
+}
+footer .icon-basket{
+    grid-column: 5;
+}
+
+
+/* footer .links{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    color:black;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 100px;  
+}
+
+footer ul{
+    font-size: 20px;
+    text-decoration: none;
+    text-decoration-style: none;
+    justify-content: center;
+    list-style: none;
+}
+
+#productos a:hover{
+    background: rgba(104, 102, 102, 0.9);
+}
+
+.copy{
+    font-size: 20px;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.sociales a{
+    color: #333;
+    text-decoration: none;
+
+} */
+
+
+
+
+ .menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid white;
+} 
+
+.menu a:hover{
+    background: rgba(104, 102, 102, 0.9);
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%)
+}
+
+@media(min-width: 950px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        background: #94FDFC;
+    }
+
+    .menu a{
+        border: none;
+    }
+
+
+    header label{
+        display: none;
+    }
+}
+
+
+
+@media(min-width: 950px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+
+
+#productos{
+    background: white;
+    color: black;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.producto-get img{
+    width: 200px;
+    height: 200px;
+}
+
+.producto-get{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contenedor-producto{
+    display: grid;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    justify-content: center;
+}
+
+.contenedor-producto > div .producto-get img{
+    background: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50px;
+    border: 7px solid white;
+}
+
+#productos a{
+    display: block;
+    width: 200px;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 2px solid #94FDFC;
+    background: #94FDFC;
+    margin: 20px auto;
+
+}
+
+@media(max-width: 850px){
+    .contenedor-producto{
+        display: grid;
+        width: auto;
+        max-width: 1000px;
+        margin: 20px auto;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,auto);
+        justify-content: center;
+        
+        }
+
+} 

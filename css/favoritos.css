@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    background-color: whitesmoke;
+}
+
+.marcas_favoritas{
+    height: 100px;    
+    overflow-y: hidden; 
+    overflow-x: auto;
+    white-space: nowrap;
+    width: auto;
+    padding: 10px;
+    
+}
+
+.marcas_favoritas a{
+    display: inline-block;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.tiendas_favoritas{
+    font-size: 17px;
+    padding: 15px;
+}
+
+
+.marcas_favoritas img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top:0;
+    left: 0;
+}
+
+.productos{
+    position: relative;
+    width: 95%;
+    height: auto;
+    top: 0;
+    bottom: 50px;
+    padding:10px;
+    
+}
+
+.productos h3{
+    font-size: 17px;
+}
+
+
+.productos .producto{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 50% 20%; 
+    width: 100%;
+    height: 100px;
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px #CCD0D0 solid;
+}
+
+.productos .producto img{
+    grid-column: 1; 
+    width: 90px;
+    height: 90px;  
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.productos .producto button{
+    position: absolute;
+    top: 25%;
+    right: 15px; 
+    grid-column: 3;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    background-color:;
+}
+
+.productos .producto h4{
+    text-align: center;
+    align-self: center;
+    position: relative;
+    left: -20px;
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    margin: 2px;
+    border: 1px rgba(104, 102, 102, 0.1) solid;
+    align-self: center;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+footer .icon-home{
+    grid-column: 1;
+}
+footer .footer .icon-heart{
+    grid-column: 2;
+}
+footer .icon-phone{
+    grid-column: 3;
+}
+footer .icon-search{
+    grid-column: 4;
+}
+footer .icon-basket{
+    grid-column: 5;
+}
