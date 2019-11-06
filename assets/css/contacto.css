@@ -141,7 +141,7 @@ body{
 
 .recetas .dulce{
     grid-column: 1;
-    background: url(../img/perro2.jpg) no-repeat center;
+    background: url(../images/perro2.jpg) no-repeat center;
     border-radius: 30px;
     margin: 10px;
 }

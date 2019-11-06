@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background-color: #496A80;
+}
+
+.principal_barra{
+    box-shadow: 0px 0px 10px 0px black; 
+    
+    background-color: #81BCE3;
+
+}
+.botones{
+    background-color: #0097FC;
+    border-bottom: #0097FC;
+    box-shadow: 0px 0px 10px 0px black;  
+    color: ;
+}

@@ -47,7 +47,7 @@ body{
 
 .dropdown{
     grid-column: 1/2;
-    background: url(assets/images/menu.svg) no-repeat center ;
+    background: url(../images/menu.svg) no-repeat center ;
     background-size: 40px;
     /* position: relative; */
     background-color: #0097FC;
@@ -139,7 +139,7 @@ h1{
     background-color: #81BCE3;
 }
 .search2{
-    background: url(assets/images/loupe.svg) no-repeat center ;
+    background: url(../images/loupe.svg) no-repeat center ;
     grid-column: 5/6;
     background-size: 40px;
     position: relative;
@@ -191,7 +191,7 @@ h1{
 .iitem1{
     grid-row: 1/2; 
     border-radius: 25px;
-    background-image: url(assets/images/acc1.jpg);
+    background-image: url(../images/prot1.jpg);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -237,10 +237,11 @@ h1{
 .iitem2{
     grid-row: 1/2;
     border-radius: 25px;
-    background-image: url(assets/images/acc2.jpg);
+    background-image: url(../images/prot2.jpg);
     height: 300px;
     width: 300px;
-    background-size: cover;
+    background-size: 103%;
+    background-position-y: 5px;
     
    
 
@@ -251,7 +252,7 @@ h1{
     border-radius: 25px;
     height: 300px;
     width: 300px;
-    background-image: url(assets/images/acc3.jpg) ;
+    background-image: url(../images/prot3.jpg) ;
     background-size: cover;
     /* position: relative; */
     
@@ -263,7 +264,7 @@ h1{
     border-radius: 25px;
     height: 300px;
     width: 300px;
-    background-image: url(assets/images/acc4.jpg) ;
+    background-image: url(../images/prot4.jpg) ;
     background-size: cover;
     /* position: relative; */
     
@@ -275,7 +276,7 @@ h1{
     border-radius: 25px;
     height: 300px;
     width: 300px;
-    background-image: url(assets/images/acc5.jpg) ;
+    background-image: url(../images/prot5.jpg) ;
     background-size: cover;
     /* position: relative; */
 
@@ -285,7 +286,7 @@ h1{
 .iitem6{
     grid-row: 1/2; 
     border-radius: 25px;
-    background-image: url(assets/images/ropa1.jpg);
+    background-image: url(../images/vita1.jpg);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -295,24 +296,11 @@ h1{
 
 
 }
-.desc01-content {
-     
-    display: none;
-    
-    
-    font-size: 80px;
-    
-}
-
-
-
-
-
 
 .iitem7{
     grid-row: 1/2;
     border-radius: 25px;
-    background-image: url(assets/images/ropa2.jpg);
+    background-image: url(../images/vita2.jpg);
     height: 300px;
     width: 300px;
     background-size: cover;
@@ -326,7 +314,7 @@ h1{
     border-radius: 25px;
     height: 300px;
     width: 300px;
-    background-image: url(assets/images/ropa3.jpg) ;
+    background-image: url(../images/vita3.jpg) ;
     background-size: cover;
     /* position: relative; */
     
@@ -338,7 +326,7 @@ h1{
     border-radius: 25px;
     height: 300px;
     width: 300px;
-    background-image: url(assets/images/ropa4.jpg) ;
+    background-image: url(../images/vita4.jpg) ;
     background-size: cover;
     /* position: relative; */
     
@@ -350,7 +338,70 @@ h1{
     border-radius: 25px;
     height: 300px;
     width: 300px;
-    background-image: url(assets/images/ropa5.jpg) ;
+    background-image: url(../images/vita5.jpg) ;
+    background-size: cover;
+    /* position: relative; */
+
+
+}
+
+
+.iitem11{
+    grid-row: 1/2; 
+    border-radius: 25px;
+    background-image: url(../images/gana1.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    display: block;
+    /* position: relative; */
+    
+
+
+}
+
+.iitem12{
+    grid-row: 1/2;
+    border-radius: 25px;
+    background-image: url(../images/gana2.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    
+   
+
+
+}
+.iitem13{
+    grid-row: 1/2;
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/gana3.jpg) ;
+    background-size: cover;
+    /* position: relative; */
+    
+
+
+}
+.iitem14{
+    grid-row: 1/2;
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/gana4.jpg) ;
+    background-size: cover;
+    /* position: relative; */
+    
+
+
+}
+.iitem15{
+    grid-row: 1/2;
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/gana5.jpg) ;
     background-size: cover;
     /* position: relative; */
 
@@ -394,7 +445,7 @@ h1{
 [class^="btn"]{
     grid-column: 2/3;
     grid-row: 1/2;
-    background: url(assets/images/shopping-cart.svg) no-repeat center;
+    background: url(../images/shopping-cart.svg) no-repeat center;
     background-size: 20px;
     
     text-align: center;
@@ -409,7 +460,7 @@ h1{
 }
 [class^="fav"]{
     grid-column: 4/5;
-    background: url(assets/images/favorite-heart-button.svg) no-repeat center;
+    background: url(../images/favorite-heart-button.svg) no-repeat center;
     background-size: 20px;
     
     text-align: center;
@@ -492,6 +543,10 @@ btn1:hover .btnhover {
         font-size: 60px;
     
     }
+    .barra{
+        grid-auto-columns: 60px 160px 2fr 2fr 60px;
+        grid-auto-rows: 50px;
+    }
     .dropdown-content .inicio{
         width: 60vw;
         height: 40px;
@@ -518,10 +573,6 @@ btn1:hover .btnhover {
     }
     .page{
         font-size: 24px;
-    }
-    .barra{
-        grid-auto-columns: 60px 160px 2fr 2fr 60px;
-        grid-auto-rows: 50px;
     }
 }
 @media screen and (max-width: 1056px) {

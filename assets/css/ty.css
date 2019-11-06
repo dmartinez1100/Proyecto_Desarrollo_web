@@ -19,7 +19,7 @@ body{
 
 .dropdown{
     grid-column: 1/2;
-    background: url(assets/images/menu.svg) no-repeat center ;
+    background: url(../images/menu.svg) no-repeat center ;
     background-size: 40px;
     /* position: relative; */
     background-color: #0097FC;
@@ -111,7 +111,7 @@ h1{
     background-color: #81BCE3;
 }
 .search2{
-    background: url(assets/images/loupe.svg) no-repeat center ;
+    background: url(../images/loupe.svg) no-repeat center ;
     grid-column: 5/6;
     background-size: 40px;
     position: relative;
@@ -183,101 +183,101 @@ h2{
 }
 
 .img1{
-    background: url(assets/images/abs1.jpg) center;
+    background: url(../images/abs1.jpg) center;
     border-radius: 25px;
     
     background-size: cover;
     margin: 10px;
 }
 .img2{
-    background: url(assets/images/abs2.jpg);
+    background: url(../images/abs2.jpg);
     border-radius: 25px;
     
     background-size: cover;
     margin: 10px;
 }
 .img3{
-    background: url(assets/images/abs3.jpg);
+    background: url(../images/abs3.jpg);
     border-radius: 25px;
     background-size: cover;
     
     margin: 10px;
 }
 .img4{
-    background: url(assets/images/abs4.jpg);
+    background: url(../images/abs4.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
 }
 .img5{
-    background: url(assets/images/abs5.jpg);
+    background: url(../images/abs5.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
 }
 .img6{
-    background: url(assets/images/chest1.jpg) center;
+    background: url(../images/chest1.jpg) center;
     border-radius: 25px;
     
     background-size: cover;
     margin: 10px;
 }
 .img7{
-    background: url(assets/images/chest2.jpg);
+    background: url(../images/chest2.jpg);
     border-radius: 25px;
     
     background-size: cover;
     margin: 10px;
 }
 .img8{
-    background: url(assets/images/chest3.jpg);
+    background: url(../images/chest3.jpg);
     border-radius: 25px;
     background-size: cover;
     
     margin: 10px;
 }
 .img9{
-    background: url(assets/images/chest4.jpg);
+    background: url(../images/chest4.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
 }
 .img10{
-    background: url(assets/images/chest5.jpg);
+    background: url(../images/chest5.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
 }
 
 .img11{
-    background: url(assets/images/back1.jpg) center;
+    background: url(../images/back1.jpg) center;
     border-radius: 25px;
     
     background-size: cover;
     margin: 10px;
 }
 .img12{
-    background: url(assets/images/back2.jpg);
+    background: url(../images/back2.jpg);
     border-radius: 25px;
     
     background-size: cover;
     margin: 10px;
 }
 .img13{
-    background: url(assets/images/back3.jpg);
+    background: url(../images/back3.jpg);
     border-radius: 25px;
     background-size: cover;
     
     margin: 10px;
 }
 .img14{
-    background: url(assets/images/back4.jpg);
+    background: url(../images/back4.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
 }
 .img15{
-    background: url(assets/images/back5.jpg);
+    background: url(../images/back5.jpg);
     border-radius: 25px;
     background-size: cover;
     margin: 10px;
@@ -315,7 +315,7 @@ h2{
 }
 [class^="fav"]{
     grid-column: 2/3;
-    background: url(assets/images/favorite-heart-button.svg) no-repeat center;
+    background: url(../images/favorite-heart-button.svg) no-repeat center;
     background-size: 20px;
     
     text-align: center;

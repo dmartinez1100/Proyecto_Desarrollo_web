@@ -1,6 +1,4 @@
-html{
-    background-color: rgb(245, 237, 215);
-}
+
 body{
     width: 100%;
     margin: 0;
@@ -15,6 +13,7 @@ body{
 .center{
     align-self: center;
     justify-self: center;
+    
 }
 
 
