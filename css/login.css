@@ -16,6 +16,8 @@ body{
     align-self: center;
     justify-self: center;
 }
+
+
 .sign_up{
     display: grid;
     grid-template-columns: 50% 50%;
