@@ -465,11 +465,10 @@ btn1:hover .btnhover {
 @media screen and (max-width: 900px) {
     .iitem1, .iitem2, .iitem3, .iitem4, .iitem5 {
         
-    width: 100%;
-  
-    
-    align-self: start;
-    background-position: center center;
+        width: 100%;
+        align-self: start;
+        background-position: center center;
+        
         /* The width is 100%, when the viewport is 800px or smaller */
     }
     /* .descrip2{

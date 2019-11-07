@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background-color: #496A80;
+}
+.page{
+    grid-column: 2/3;
+    box-shadow: 0px 0px 10px 0px black; 
+    color: white;
+    background-color: rgb(24, 37, 43);
+    font-family: 'Carter One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+.carrito{
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: 100px 300px  100px 100px 100px;
+    justify-items: center;
+    align-items: center;
+    margin: 0; 
+}
+.total{
+    grid-row: 1/2;
+    display: grid;
+    grid-auto-rows: 30% 70%;
+    grid-auto-columns: 20px 80px 2fr;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 0px black; 
+}
+.total1{
+    font-family: 'Pragati Narrow', sans-serif;
+    color: white;
+    
+}
+.total2{
+    font-family: 'Carter One', sans-serif;
+    color: darkgray;
+}
+.t1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    
+    
+}
+.t2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+.direccion{
+    grid-row: 2/3;
+    display: grid;
+    grid-auto-rows: 100px 100px;
+    grid-auto-columns: 120px 200px 200px;
+    width: 100%;
+    margin: 20px;
+    
+    box-shadow: 0px 0px 10px 0px black; 
+    
+}
+.d1{
+    grid-auto-columns: 2/3;
+    grid-auto-rows: 1/2;
+    text-align: center;
+    
+
+}
+.ubic{
+    grid-auto-columns: 1/2;
+    grid-auto-rows: 2/3;
+    text-align: center;
+}
+.ubic-icon{
+    
+    grid-auto-columns: 3/4;
+    grid-auto-rows: 1/3;
+}
