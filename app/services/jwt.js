@@ -13,7 +13,7 @@ function createToken(user){
         birthday:user.birthday,
         email:user.email,
         iat:moment().unix(),
-        exp:moment("30","days").unix()
+        exp:moment().add("30","days").unix()
     }
     return jwt.encode(payload,secret)
 }

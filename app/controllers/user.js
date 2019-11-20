@@ -1,6 +1,9 @@
 'use strict'
 
 var User = require("../models/user")
+var bcrypt = require("bcrypt")
+var token = require("../services/jwt")
+var pagination = require("mongoose-pagination")
 
 function home(req,res){
     res.status(200).send({
@@ -64,6 +67,45 @@ function LogIn(req,res){
         }
     })
 }
-module.exports = {home,pruebas,SaveUser,LogIn}
+//obtener usuario
+function getUser(req, res){
+    var userId = req.params.id;
+    User.findById(userId,(err, user)=>{
+        if(err){
+            return res.status(500).send({message:"error al consultar la base de datos"})
+        }
+        if(!user){
+            return res.status(404).send({message:"Usuario no encontrado"})
+        }
+        return res.status(200).send({user})
+    })
+}
 
-module.exports = {home,pruebas}
+// Obtener varios usuarios
+
+function getUsers(req,res){
+    var identityId = req.user.sub;
+    var page = 1;
+
+    if(req.params.page){
+        page = req.params.page;
+    }
+
+    var itemsPerPage = 3;
+
+    User.find().sort("_id").paginate(page,itemsPerPage,(err,users,total)=>{
+        if(err){
+            return res.status(500).send({message:"ocurrio un error"})
+        }
+        if(!users){
+            return res.status(404).send({message:"no hay usuarios para mostrar"})
+        }
+        return res.status(200).send({
+            users: users,
+            total:total,
+            pages:Math.ceil(total/itemsPerPage)
+        })
+    })
+}
+
+module.exports = {home,pruebas,SaveUser,LogIn,getUser,getUsers}
