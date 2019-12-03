@@ -7,13 +7,13 @@ var pagination = require("mongoose-pagination")
 
 function home(req,res){
     res.status(200).send({
-        message: "Bienvenido al home"
+        message: "Bienvenido al home de GoUp"
     })
 }
 
 function pruebas(req,res){
     res.status(200).send({
-        message:"hola a la ruta de pruebas"
+        message:"hola a la ruta de pruebas de GoUp"
     })
 }
 
@@ -23,17 +23,18 @@ function SaveUser(req,res){
     var user = new User();
     //console.log(params)
 
-    if(params.name){
+    if(params.name && params.password){
+        if(!params.email)return res.status(200).send({message:"Te falto un email, ¿como haras log in despues?"})
         user.name = params.name;
         user.id = params.id;
         user.genre = params.genre;
         user.email = params.email;
         user.birthday = params.birthday;
         user.gym = params.gym;
-        user.email = params.photo;
+        user.photo = params.photo;
         bcrypt.hash(params.password,5,(err,hash)=>{
             user.password = hash;
-            console.log(hash)
+            console.log("Constraseña: ",hash)
             user.save((err,userStored)=>{
                 if(err){res.status(500).send({message:"error al almacenar datos"})}
                 if(userStored){return res.status(200).send({user})}
@@ -42,7 +43,7 @@ function SaveUser(req,res){
         })
     }
     else{
-        return res.status(200).send({message:"envia los datos completos"})
+        return res.status(200).send({message:"No te podemos registrar a GoUp si no envias por lo menos un usuario y una contraseña"})
     }
 }
 //log in
@@ -50,7 +51,8 @@ function LogIn(req,res){
     var params = req.body;
     var email = params.email;
     var password = params.password;
-
+    if(!params.email)return res.status(404).send({message:"No ingresaste email"})
+    if(!params.password)return res.status(404).send({message:"No ingresaste contraseña"})
     User.findOne({email:email},(err,user)=>{
         if(err){return res.status(500).send({message:"error al buscar usuario"})}
         if(user){
@@ -70,6 +72,7 @@ function LogIn(req,res){
 //obtener usuario
 function getUser(req, res){
     var userId = req.params.id;
+    //console.log(req.params)
     User.findById(userId,(err, user)=>{
         if(err){
             return res.status(500).send({message:"error al consultar la base de datos"})

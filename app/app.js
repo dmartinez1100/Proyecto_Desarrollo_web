@@ -23,13 +23,12 @@ app.post("/",(req,res)=>{
         message:"lolo"
     })
 })*/
-app.use("/api",user_routes)
 //Midelwares
 
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
-
+app.use("/api",user_routes)
 
 //export
 
